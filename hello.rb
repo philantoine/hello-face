@@ -1,8 +1,12 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
+oauth_access_token = ENV['OAUTH_ACCESS_TOKEN']
+graph = Koala::Facebook::API.new(oauth_access_token)
+
 get '/' do
-  "Hello World! #{Time.now}"
+  content_type 'application/json', :charset => 'utf-8'
+  graph.get_object('me')
 end
 
 get '/about' do
