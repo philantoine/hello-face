@@ -1,0 +1,10 @@
+<div class="row">
+  <% @friends.each do |friend| %>
+    <div class="span3">
+      <a href="http://www.facebook.com/<%= friend.facebook_id %>">
+        <img src="<%= friend.picture_url %>"/>
+      </a>
+      <p style='font-size: 10px;'><%= friend.name %></p>
+    </div>
+  <% end %>
+</div>
