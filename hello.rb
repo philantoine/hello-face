@@ -6,7 +6,7 @@ require 'koala'
 require 'openssl'
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
-oauth_access_token = ENV['OAUTH_ACCESS_TOKEN'] || ""
+oauth_access_token = ENV['OAUTH_ACCESS_TOKEN']
 graph = Koala::Facebook::API.new(oauth_access_token)
 
 get '/' do
