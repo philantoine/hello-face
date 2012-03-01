@@ -2,7 +2,7 @@
 
 http://developers.facebook.com/tools/explorer/
 
-bundle exec heroku config:add OAUTH_ACCESS_TOKEN=AAACEdEose0cBAEIZCkDuvslxMGg56NP7wlLL8n7sUtXXNzuWQbDUAUhS4MPOxA7KTJrZCNDv0HMiiHZArrtsAVaDjZCXNJIwC5cjDRa2aDBQ6VRdkEcR
+bundle exec heroku config:add OAUTH_ACCESS_TOKEN=thetoken
 
 ### How to deploy
 
